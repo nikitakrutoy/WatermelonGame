@@ -5,16 +5,20 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float speed = 5;
-    // Start is called before the first frame update
+    private GameObject player;
+    private float xOffset;
+    private float yOffest;
+    private float zOffset;
     void Start()
     {
-        
+        xOffset = transform.position.x;
+        yOffest = transform.position.y;
+        zOffset = transform.position.z;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+        transform.position = new Vector3(player.transform.position.x + xOffset, yOffest, player.transform.position.z + zOffset);
     }
 }

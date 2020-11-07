@@ -5,30 +5,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float force = 10;
-    public GameObject projectile;
-    private float nextActionTime = 0.0f;
-    public float period = 0.1f;
-    private Rigidbody _rigidbody;               
-    // Start is called before the first frame update
+    [SerializeField] private float movementSpeed = 5f;
+    [SerializeField] private GameObject ceilSky;
+    private float jumpHeight = 10f;
+    private float skyHeight;
+    private Rigidbody rb;
 
-    void Start()
+
+    private void Start()
     {
-        _rigidbody = gameObject.GetComponent<Rigidbody>();
-        Physics.IgnoreCollision(projectile.GetComponent<Collider>(), GetComponent<Collider>());
+        rb = gameObject.GetComponent<Rigidbody>();
+        skyHeight = ceilSky.transform.position.y;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void Update()
     {
-        Vector3 spawnPostion = transform.position;
-        if (Input.GetKey("space") || Input.touchCount >= 1)
+        float yMovement = Input.GetAxis("Vertical") * movementSpeed;
+
+        transform.Translate(new Vector3(0, 0, yMovement) * Time.deltaTime);
+        ceilSky.transform.position = new Vector3(transform.position.x, skyHeight, transform.position.z);
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            _rigidbody.AddForce(new Vector3(0, force, 0));
-            if (Time.time > nextActionTime ) {
-                nextActionTime += period;
-                Instantiate(projectile, spawnPostion, Quaternion.identity);
-            }
+            rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
         }
+
     }
 }
