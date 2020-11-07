@@ -7,10 +7,7 @@ public class RoadSpawner : MonoBehaviour
     // Start is called before the first frame update
     private float offset = 60f;
     [SerializeField] private List<GameObject> road_list;
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int coinSpawnCounter = 2;
 
     // Update is called once per frame
     void Update()
@@ -28,6 +25,7 @@ public class RoadSpawner : MonoBehaviour
         float newZ = road_list[road_list.Count - 1].transform.position.z + offset;
         moveRoad.transform.position = new Vector3(moveRoad.transform.position.x, moveRoad.transform.position.y, newZ);
         road_list.Add(moveRoad);
+
         moveRoad.GetComponent<CoinManager>().Spawn();
     }
 }

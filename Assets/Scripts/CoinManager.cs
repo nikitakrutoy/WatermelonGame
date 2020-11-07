@@ -43,7 +43,7 @@ public class CoinManager : MonoBehaviour
                 new Vector3(coinSpawnPoint.transform.position.x,
                 height,
                 coinSpawnPoint.transform.position.z + i * offset),
-                Quaternion.identity);
+                Quaternion.Euler(0f, 45f, 90f));
             spawnedCoins.Add(newCoin);
         }
     }
@@ -61,7 +61,7 @@ public class CoinManager : MonoBehaviour
                 new Vector3(coinSpawnPoint.transform.position.x,
                 coinSpawnPoint.transform.position.y + coinHeight,
                 coinSpawnPoint.transform.position.z + i * offset),
-                Quaternion.identity);
+                Quaternion.Euler(0f, 45f, 90f));
             spawnedCoins.Add(newCoin);
             deg += degStep;
         }
