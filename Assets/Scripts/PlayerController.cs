@@ -7,14 +7,15 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5f;
     [SerializeField] private GameObject sky;
-    [SerializeField] private SpawnManager spawner;
+    [SerializeField] private GameObject roadManager;
     [SerializeField] private float jumpHeight = 5f;
     private Rigidbody rb;
-
+    private SpawnManager spawner;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        spawner = roadManager.GetComponent<SpawnManager>();
     }
 
     private void Update()
