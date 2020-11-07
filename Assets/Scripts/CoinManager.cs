@@ -42,7 +42,7 @@ public class CoinManager : EventManager
                 new Vector3(x,
                 height,
                 y  + i * offset),
-                Quaternion.Euler(0f, 45f, 90f));
+                coin_prefab.transform.rotation);
             spawnedCoins.Add(newCoin);
         }
     }
@@ -60,7 +60,7 @@ public class CoinManager : EventManager
                 new Vector3(x,
                 minHeight + coinHeight,
                 y + i * offset),
-                Quaternion.Euler(0f, 45f, 90f));
+                coin_prefab.transform.rotation);
             spawnedCoins.Add(newCoin);
             deg += degStep;
         }
