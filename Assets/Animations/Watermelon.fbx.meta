@@ -1,14 +1,17 @@
 fileFormatVersion: 2
-guid: 6f0a6eba1f3aa624c94365cdeaf9bd91
+guid: 5fc8fd49d25a4f6488677de1d2356040
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
+      74: -887982601649841707
+    second: metarig|metarigAction
+  - first:
       74: -8495229139853334623
     second: metarig|Flying
   - first:
-      74: -887982601649841707
-    second: metarig|metarigAction
+      74: 8573951071064270197
+    second: metarig|Flying.001
   - first:
       74: -5003131165045108139
     second: metarig|PoseLib
@@ -21,9 +24,6 @@ ModelImporter:
   - first:
       74: 1486859051784272614
     second: metarig|Running.002
-  - first:
-      74: 8470231276258821930
-    second: metarig|Running.003
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -53,11 +53,40 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
+      name: metarig|Flying
+      takeName: metarig|Flying
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
       name: metarig|Running
       takeName: metarig|Running
       internalID: 0
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 5f;
+    [SerializeField] private float movementSpeed = 6f;
     [SerializeField] private GameObject sky;
     [SerializeField] private GameObject roadManager;
-    [SerializeField] private float jumpHeight = 5f;
+    [SerializeField] private float jumpHeight = 10f;
     private Rigidbody rb;
     private SpawnManager spawner;
 
@@ -20,14 +20,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
-
         transform.Translate(new Vector3(0, 0, 1) * movementSpeed * Time.deltaTime);
         sky.transform.position = new Vector3(sky.transform.position.x, sky.transform.position.y, transform.position.z);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, jumpHeight, 0));
         }
 
     }
