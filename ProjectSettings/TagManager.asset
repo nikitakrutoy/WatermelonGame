@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - SpawnTrigger
+  - Coin
   layers:
   - Default
   - TransparentFX

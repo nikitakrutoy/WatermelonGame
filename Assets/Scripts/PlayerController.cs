@@ -6,7 +6,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5f;
-    private float jumpHeight = 10f;
+    [SerializeField] private GameObject sky;
+    [SerializeField] private SpawnManager spawner;
+    [SerializeField] private float jumpHeight = 5f;
     private Rigidbody rb;
 
 
@@ -17,14 +19,33 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        float yMovement = Input.GetAxis("Vertical") * movementSpeed;
 
-        transform.Translate(new Vector3(0, 0, yMovement) * Time.deltaTime);
+
+        transform.Translate(new Vector3(0, 0, 1) * movementSpeed * Time.deltaTime);
+        sky.transform.position = new Vector3(sky.transform.position.x, sky.transform.position.y, transform.position.z);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.tag)
+        {
+            case "SpawnTrigger":
+                spawner.Spawn();
+                break;
+            case "Coin":
+                other.gameObject.GetComponent<Renderer>().enabled = false;
+                break;
+            default:
+                break;
+        }
+
+    
+        
     }
 }
