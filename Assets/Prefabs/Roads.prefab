@@ -48,9 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinSpawnPoint: {fileID: 8020431983196365833}
-  coin_number: 5
+  coin_number_min: 3
+  coin_number_max: 10
   coin_prefab: {fileID: 50667621716355242, guid: c15336027244383459db23cd6729085d,
     type: 3}
+  maxHeight: 6
 --- !u!1 &7671445787562591503
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +115,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795925732447203999}
-  - component: {fileID: 2364385618533744013}
   m_Layer: 0
   m_Name: CoinsSpawnPoint
   m_TagString: Untagged
@@ -135,14 +136,6 @@ Transform:
   m_Father: {fileID: 7671445787151861889}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2364385618533744013
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8020431983196365833}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &6903070396623781524
 PrefabInstance:
   m_ObjectHideFlags: 0
