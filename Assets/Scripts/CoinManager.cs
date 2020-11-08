@@ -11,7 +11,7 @@ public class CoinManager : EventManager
     private float offset = 2f;
     [SerializeField] private float maxHeight = 5f;
     private int[] spawnChoices = new int[] {1, 2};
-    private float minHeight = 1f;
+    private float minHeight = 2f;
 
 
     public override void Spawn(float x, float y)

@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject sky;
     [SerializeField] private GameObject roadManager;
     [SerializeField] private float jumpHeight = 10f;
+    [SerializeField] private Material playerMat;
+    [SerializeField] private GameObject particles;
     private Rigidbody rb;
     private SpawnManager spawner;
     private bool isGrounded = true;
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
         spawner = roadManager.GetComponent<SpawnManager>();
+        particles.SetActive(false);
     }
 
     private void Update()
@@ -28,6 +31,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isSqueezed = true;
+            particles.SetActive(true);
+
         }
 
         if (Input.GetKey(KeyCode.Space))
@@ -38,8 +43,20 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isSqueezed = false;
+            particles.SetActive(false);
         }
 
+    }
+
+    IEnumerator OnEnemyFade(float duration)
+    {
+        for (float t = 0f; t < duration; t += Time.deltaTime)
+        {
+            Color textureColor = playerMat.color;
+            textureColor.a = Mathf.Sin(Time.time * 5.0f);
+            playerMat.color = textureColor;
+            yield return null;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,6 +69,9 @@ public class PlayerController : MonoBehaviour
             case "Coin":
                 Vector3 oldPos = other.gameObject.transform.position;
                 other.gameObject.transform.position = new Vector3(oldPos.x, -10, oldPos.z);
+                break;
+            case "Enemy":
+                StartCoroutine(OnEnemyFade(1f));
                 break;
             default:
                 break;

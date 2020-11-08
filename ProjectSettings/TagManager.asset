@@ -8,6 +8,7 @@ TagManager:
   - SpawnTrigger
   - Coin
   - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
