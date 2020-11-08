@@ -4,5 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LeraScene.unity
+    guid: f4a44be49665b9945b9f485c89f24172
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c9c4beab98e0946c2a68e699889d6642,
+      type: 2}
