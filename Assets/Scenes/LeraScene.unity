@@ -157,7 +157,7 @@ Transform:
   - {fileID: 799839236}
   - {fileID: 2122710421}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197878648
 PrefabInstance:
@@ -297,7 +297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -389,7 +389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &729636905
 GameObject:
@@ -420,7 +420,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &729636907
 MonoBehaviour:
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grass_prefabs:
   - {fileID: 1820910515500719089, guid: c1e56420a40635246b13b340eac11e9f, type: 3}
+  - {fileID: 1820910515500719089, guid: b18e8599541050f47a9b1228ac9b30fb, type: 3}
 --- !u!1 &743441663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7671445787151861891, guid: 365e74c394062754e90efdd7a88c56b7,
@@ -552,12 +553,12 @@ PrefabInstance:
         type: 3}
       propertyPath: platfromDestroyerPoint
       value: 
-      objectReference: {fileID: 952796259}
+      objectReference: {fileID: 0}
     - target: {fileID: 7671445785570387675, guid: 365e74c394062754e90efdd7a88c56b7,
         type: 3}
       propertyPath: platfromDestroyerPoint
       value: 
-      objectReference: {fileID: 952796259}
+      objectReference: {fileID: 0}
     - target: {fileID: 7671445787151861889, guid: 365e74c394062754e90efdd7a88c56b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -632,36 +633,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 814240016}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &952796258
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 952796259}
-  m_Layer: 0
-  m_Name: PlatfromDestroyerPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &952796259
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952796258}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.096, y: 2.0568595, z: -0.10916424}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +762,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104329354
 GameObject:
@@ -822,7 +793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1104329356
 MonoBehaviour:
@@ -1029,7 +1000,7 @@ Transform:
   m_LocalScale: {x: 10, y: 0.1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1806290051
 BoxCollider:
@@ -1087,7 +1058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926778389
 GameObject:
@@ -1114,12 +1085,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926778389}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 4, y: 6, z: -10}
+  m_LocalPosition: {x: 3.28, y: 6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!114 &1926778391
 MonoBehaviour:
@@ -1162,7 +1133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1992424095
 MonoBehaviour:
@@ -1243,6 +1214,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7217397239968734130, guid: 5fc8fd49d25a4f6488677de1d2356040,
+        type: 3}
+      propertyPath: m_Materials.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: d91da7acc6408e146968e721784a5777, type: 2}
+    - target: {fileID: -7217397239968734130, guid: 5fc8fd49d25a4f6488677de1d2356040,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d91da7acc6408e146968e721784a5777, type: 2}
+    - target: {fileID: -7217397239968734130, guid: 5fc8fd49d25a4f6488677de1d2356040,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: d91da7acc6408e146968e721784a5777, type: 2}
+    - target: {fileID: -7217397239968734130, guid: 5fc8fd49d25a4f6488677de1d2356040,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d91da7acc6408e146968e721784a5777, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fc8fd49d25a4f6488677de1d2356040,
         type: 3}
       propertyPath: m_Name
@@ -1355,7 +1346,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2013118867
 MonoBehaviour:
@@ -1542,12 +1533,12 @@ PrefabInstance:
         type: 3}
       propertyPath: platfromDestroyerPoint
       value: 
-      objectReference: {fileID: 952796259}
+      objectReference: {fileID: 0}
     - target: {fileID: 7671445785570387675, guid: 365e74c394062754e90efdd7a88c56b7,
         type: 3}
       propertyPath: platfromDestroyerPoint
       value: 
-      objectReference: {fileID: 952796259}
+      objectReference: {fileID: 0}
     - target: {fileID: 7671445787151861889, guid: 365e74c394062754e90efdd7a88c56b7,
         type: 3}
       propertyPath: m_LocalPosition.x

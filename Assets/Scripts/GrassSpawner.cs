@@ -6,8 +6,8 @@ public class GrassSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] grass_prefabs;
     private List<GameObject> spawned_grasses = new List<GameObject>();
-    private float Xright = 60f;
-    private float Xleft = -60f;
+    private float Xright = 50f;
+    private float Xleft = -50f;
     private float Zbegin = -30f;
     private float size = 30f;
     private int initCount = 15;

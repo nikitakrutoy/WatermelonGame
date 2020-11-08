@@ -6,7 +6,7 @@ public class ObstacleManager : EventManager
 {
     [SerializeField] private GameObject obstacle;
     private List<GameObject> spawned_obstacles = new List<GameObject>();
-    private float height = 1f;
+    private float height = 0f;
     public override void Remove()
     {
         if (spawned_obstacles.Count >= 1)

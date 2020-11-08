@@ -7,6 +7,7 @@ TagManager:
   - Projectile
   - SpawnTrigger
   - Coin
+  - Ground
   layers:
   - Default
   - TransparentFX
