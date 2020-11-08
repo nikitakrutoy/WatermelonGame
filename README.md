@@ -1,6 +1,8 @@
 # Watermelon Wonderland
 
-[WebGL version](https://play.unity.com/mg/other/watermelon-wonderland)
+[WebGL version on Unity Play](https://play.unity.com/mg/other/watermelon-wonderland)
+
+[Rainbow version on itch.io](https://dilika.itch.io/watermelonwonder)
 
 [Video](https://www.youtube.com/watch?v=x8_XlGubKa0&feature=youtu.be&ab_channel=volvvictory)
 
