@@ -45,11 +45,11 @@ The painful experience during procedures in childhood impacts how people perceiv
 
 ## Technologies:
 
-Unity — just because it's a good tool for mobile game development
-Arduino Uno + MyoWare Muscle Sensor + Bluetooth — as a temporary solution, which is easy to implement
-Mobile VR — best price on VR market
-IOS/Android — multiplatform solution
-Blender — for 3D content creation
+- Unity — just because it's a good tool for mobile game development
+- Arduino Uno + MyoWare Muscle Sensor + Bluetooth — as a temporary solution, which is easy to implement
+- Mobile VR — best price on VR market
+- IOS/Android — multiplatform solution
+- Blender — for 3D content creation
 
 ## Plans:
 
